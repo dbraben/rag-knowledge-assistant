@@ -2,7 +2,13 @@
 
 ![RAG Knowledge Assistant](assets/rag-knowledge-assistant.png)
 
-A Retrieval-Augmented Generation (RAG) chat assistant powered by Claude (Anthropic) and ChromaDB. Drop your documents into the `knowledge-base/` folder, run the ingestion script, and ask questions via a Gradio web UI.
+<img src="assets/simple-rag-diagram.png" width="406" height="640" alt="Simple RAG Diagram" />
+
+A simple RAG playground to get you started quickly — no cloud vector database required. Documents are embedded and stored locally with ChromaDB, and answers are generated via Claude (Anthropic) at minimal cost using the Haiku model by default.
+
+> **Note:** This is intentionally a lightweight starting point, not a production system. It's designed to be easy to run locally, cheap to experiment with, and simple to understand.
+
+Drop your documents into the `knowledge-base/` folder, run the ingestion script, and ask questions via a Gradio web UI.
 
 Supported document types: `.md`, `.txt`, `.pdf`, `.docx`, `.xlsx`
 
