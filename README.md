@@ -1,5 +1,7 @@
 # RAG Knowledge Assistant
 
+![RAG Knowledge Assistant](assets/rag-knowledge-assistant.png)
+
 A Retrieval-Augmented Generation (RAG) chat assistant powered by Claude (Anthropic) and ChromaDB. Drop your documents into the `knowledge-base/` folder, run the ingestion script, and ask questions via a Gradio web UI.
 
 Supported document types: `.md`, `.txt`, `.pdf`, `.docx`, `.xlsx`
