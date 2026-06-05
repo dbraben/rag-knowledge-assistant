@@ -151,3 +151,17 @@ rag-knowledge-assistant/
 **Wrong person / document returned** — Re-run `ingest.py` after adding new documents. The vector DB is not updated automatically.
 
 **Excel tables not loading** — Install the unstructured extras: `uv pip install "unstructured[xlsx]"`
+
+**10 Advanced techniques to improve your returns (Pro Tips Hacks)**
+
+1. Chunking: Try a different chunking strategy. For example, use Hugging Faces experimental Sematic Chunker
+2. Improve your prompts. Add the current date, relevant context or chat history
+3. Document pre-processing. Junk in junk out. Use a LLM to tidy up files if they are messy. Carve them up for the best shape for your knowledge base.
+4. Query pre-processing: Use an LLM to rewrite your users' questions to make it superior for quetioning your knowledge base
+5. Query expansion. Use an LLM to expand upon the user's question.
+6. Encoder selection. Experiment with different encoders - small, big, maybe pick a specialist one for your context i.e. law, graphs, images
+7. Re-ranking. Use an LLM to preprocess the RAG results, i.e. sub-select and reorder
+8. The hierarchical hack. Use an LLM to create summarize results at multiple levels to cross match data, get the LLM to query these first with specific topics
+9. Graph RAG. Span across closely related subjects, try a different database such as Neo4j that's specially designed to store nodes with edges (Trend alert: try imroving your meta-data first!!)
+10. Agentic RAG. Give your LLM some tools, skills, other data sources that can assist
+
